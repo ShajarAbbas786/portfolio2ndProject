@@ -9,13 +9,14 @@ body{
     font-family: 'popins',sans-serif;
 }
 .navigation{
-    width: 99%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 10vh;
     align-items: center;
     /* border: 2px solid black; */
     margin: auto;
+    background-image: linear-gradient(322deg,#FE9DA0,#FACFC4);
     
 }
 .logo{
@@ -31,9 +32,11 @@ body{
 .items li a{
     text-decoration: none;
     color: black;
+    padding: 5px 0px;
 }
 .items li a:hover{
-    border-bottom: 2px solid rgb(255, 161, 255);
+    border-bottom: 2px solid rgb(0, 4, 255);
+    border-top: 2px solid rgb(0, 4, 255);
 }
 .navigation img{
     margin-left: 10px;
@@ -44,22 +47,24 @@ gap:10px;
 margin-right: 10px;
 }
 
-.navigation .btn{
-    width: auto;
-    padding: 5px 10px;
-    height: 30px;
+.buttons{
+    display: flex;
+}
+.buttons a{
+    text-decoration: none;
+    color: #0F141E;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 2px solid blue;
+     
+}
+.buttons a:hover{
+    text-decoration: none;
+    color: #ffffff;
+background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 7px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-#btn1{
-    background-color: aquamarine;
-}
-
-#btn2{
-    background-color: #e8e8e8;
-    font-weight: 700;
-    color:#424242;
 }
 
 /* banner section section */
@@ -220,7 +225,7 @@ display: flex;
 
 .team-section h2 {
     font-size: 28px;
-    color: #333;
+    color: #ff14ad;
 }
 
 .divider {
@@ -246,10 +251,11 @@ display: flex;
     width: 250px;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 46, 234, 0.1);
     text-align: center;
     transition: 0.3s;
     border: 1px solid #ddd;
+    background-color: #333;
 }
 
 .team-card:hover {
@@ -263,18 +269,23 @@ display: flex;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    border: 2px solid pink;
 }
-
+.team-card img:hover {
+    width: 150px;
+    height: 150px;
+   transform:width height 2s;
+}
 /* Name & Role */
 .team-card h3 {
     font-size: 18px;
-    color: #333;
+    color: #fa00dd;
     margin-bottom: 5px;
 }
 
 .team-card p {
     font-size: 14px;
-    color: #666;
+    color: #ffffff;
     margin: 5px 0;
 }
 
@@ -314,11 +325,66 @@ display: flex;
 }
 
 
+/* Contact Form */
+.contact-us{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-image: linear-gradient(-322deg,#FE9DA0,#FACFC4);
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-heading{
+ /* margin-left: -100px; */
+}
+.form h1{
+  text-align: center;
+ margin-top: 30px;
+}
+.form img{
+    width: 300px;
+    height: 300px;
+}
+.contact-form{
+    width: 100%;
+    padding: 10px 20px;
+}
+.firstname,
+.lastname,
+.emai{
+    margin-top: 20px;
+   
+}
+
+.contact-form .input-fields{
+    padding: 10px 10px 10px 10px;
+    border: none;
+    outline: none;
+}
+.contact-form .submit-btn{
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+    border: none;
+cursor: pointer;
+background-image: linear-gradient(322deg,#ff98db,#e800b6);
+font-size: 20px;
+border-radius: 12px;
+margin-top: 20px;
+}
+.contact-form .submit-btn:hover{
+    background-image: linear-gradient(322deg,#ff98db,#56a8e3);
+    
+}
     /* Footer */
     .footer-section{
         width: 100%;
         background-color: #0F141E;
-        margin-top: 20px;
+       
         color: #e8e8e8;
     }
     .footer{
